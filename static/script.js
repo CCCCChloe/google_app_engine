@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-alert("aha");
+
 'use strict';
 
 // [START gae_python37_auth_javascript]
@@ -41,7 +41,6 @@ window.addEventListener('load', function () {
 
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
-      alert("user");
       // User is signed in, so display the "sign out" button and login info.
       document.getElementById('sign-out').hidden = false;
       document.getElementById('login-info').hidden = false;
@@ -55,7 +54,6 @@ window.addEventListener('load', function () {
         document.cookie = "token=" + token;
       });
     } else {
-      alert("else");
       // User is signed out.
       // Initialize the FirebaseUI Widget using Firebase.
       var ui = new firebaseui.auth.AuthUI(firebase.auth());
