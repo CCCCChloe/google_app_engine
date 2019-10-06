@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+alert("aha");
 'use strict';
 
 // [START gae_python37_auth_javascript]
