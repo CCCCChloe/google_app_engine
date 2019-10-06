@@ -17,3 +17,9 @@ h1 {
 #sign-out {
   margin-bottom: 2%;
 }
+
+.cat-image {
+  width: 10%;
+  height: 10%;
+  display: inline-block;
+}
