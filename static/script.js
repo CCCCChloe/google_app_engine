@@ -41,6 +41,7 @@ window.addEventListener('load', function () {
 
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
+      alert("user");
       // User is signed in, so display the "sign out" button and login info.
       document.getElementById('sign-out').hidden = false;
       document.getElementById('login-info').hidden = false;
@@ -54,14 +55,15 @@ window.addEventListener('load', function () {
         document.cookie = "token=" + token;
       });
     } else {
+      alert("else");
       // User is signed out.
       // Initialize the FirebaseUI Widget using Firebase.
       var ui = new firebaseui.auth.AuthUI(firebase.auth());
       // Show the Firebase login button.
       ui.start('#firebaseui-auth-container', uiConfig);
       // Update the login state indicators.
-      document.getElementById('sign-out').hidden = false;
-      document.getElementById('login-info').hidden = false;
+      document.getElementById('sign-out').hidden = true;
+      document.getElementById('login-info').hidden = true;
       // Clear the token cookie.
       document.cookie = "token=";
     }
