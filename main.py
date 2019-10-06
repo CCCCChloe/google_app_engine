@@ -81,7 +81,6 @@ def root():
     return render_template(
         'index.html',
         user_data=claims, error_message=error_message, times=times)
-        user_data="I am user data"
 # [END gae_python37_auth_verify_token]
 
 
