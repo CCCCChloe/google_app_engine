@@ -1,5 +1,18 @@
 body {
     font-family: "helvetica", sans-serif;
     text-align: center;
-    background-color: powderblue;
+    /* background-color: powderblue; */
   }
+
+h1 {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+.btn-secondary {
+  height:34px;
+  margin:0 auto !important;
+  margin-right:10px;
+  float:left;
+}
