@@ -10,9 +10,10 @@ h1 {
   text-align: center;
 }
 
-.btn-secondary {
-  height:34px;
-  margin:0 auto !important;
-  margin-right:10px;
-  float:left;
+.center-content {
+  text-align: center;
+}
+
+#sign-out {
+  margin-bottom: 2%;
 }

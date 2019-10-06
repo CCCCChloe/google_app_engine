@@ -67,6 +67,8 @@
 
 <div id="firebaseui-auth-container"></div>
 
+<div class="center-content">
+
 <button id="sign-out" hidden=false type="button" class="btn btn-secondary">Sign Out</button>
 
 <div id="login-info" hidden=true>
@@ -78,11 +80,14 @@
       <dt>Last 10 visits</dt><dd>
 	{% for time in times %}
           <p>{{ time['timestamp'] }}</p>
+          <hr width="20%">
         {% endfor %} </dd>
     </dl>
   {% elif error_message %}
     <p>Error: {{ error_message }}</p>
   {% endif %}
+</div>
+
 </div>
 <!-- [END gae_python37_auth_firebase_html] -->
 </body>
